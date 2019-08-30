@@ -1,1 +1,94 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+@import url(//db.onlinewebfonts.com/c/623c7118249e082fe87a78e08506cb4b?family=Segoe+UI);
+.avatar {
+    width: 90px;
+    height: 90px;
+    border-radius: 45px;
+    margin-left: 31px;
+    margin-top: 3px;
+}
 
+.avatarContainer {
+    height: 100%;
+}
+
+ion-header {
+    height: 167px;
+}
+
+ion-grid {
+    height: 100%;
+}
+
+ion-toolbar {
+    height: 166px;
+    --padding-top: 50px;
+}
+
+html {
+    overflow: hidden;
+}
+
+.nameHeader {
+    font-size: 30px;
+    line-height: 42px;
+    color: #494949;
+    font-family: 'Open Sans', sans-serif;
+}
+
+ion-icon {
+    width: 40px;
+    height: 40px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.blogName {
+    font-size: 20px;
+    letter-spacing: 1px;
+    line-height: 24px;
+    color: #171616;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.blogDate {
+    font-size: 20px;
+    line-height: 24px;
+    color: #777777;
+    font-family: 'Open Sans', sans-serif;
+    margin-top: 15px;
+}
+
+.blogInfo {
+    display: inline-block;
+    margin-left: 30px;
+}
+
+.blogHeader {
+    font-size: 60px;
+    line-height: 74px;
+    color: #171414;
+    font-family: "Segoe UI";
+    font-weight: 300;
+    margin-left: 35px;
+    margin-bottom: 35px;
+}
+
+.blogText {
+    font-size: 30px;
+    line-height: 48px;
+    color: #777777;
+    font-family: "Segoe UI";
+    font-weight: 300;
+    margin-left: 35px;
+    margin-bottom: 100px;
+}
+
+.userSheet>img {
+    height: 388px;
+    width: 750px;
+    margin-top: 48px;
+    margin-bottom: 48px;
+}
