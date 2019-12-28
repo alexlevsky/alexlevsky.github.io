@@ -14,9 +14,7 @@
                     </ion-col>
                     <ion-col size="2" class="ion-float-right">
                         <div>
-
                             <ion-icon name="search" (click)="showSearchBar()"></ion-icon>
-
                         </div>
                     </ion-col>
                 </ion-row>
@@ -69,7 +67,7 @@
     </ion-header>
     <ion-content>
         <ion-list *ngFor="let blog of blogs | filter:'header':searchBarText">
-            <a [href]="gotoArticle(blog.header)">
+            <a  (click)="gotoArticle(blog.id)">
                 <ion-item>{{ blog.header }}</ion-item>
             </a>
         </ion-list>

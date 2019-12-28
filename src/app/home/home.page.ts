@@ -1,6 +1,10 @@
 import { Component } from '@angular/core';
-import { FakeApiService } from '../fake-api.service';
 import { MenuController } from '@ionic/angular';
+import { Router } from '@angular/router';
+
+import { FakeApiService } from '../fake-api.service';
+import { DataService } from '../services/data.service';
+import { AppRoutingModule } from '../app-routing.module';
 
 @Component({
   selector: 'app-home',
@@ -14,7 +18,11 @@ export class HomePage {
   private isShowBar = true;
 
   constructor(private _fakeBlogs : FakeApiService,
-              private menu: MenuController ) {}
+              private menu: MenuController,
+              private _data: DataService,
+              private _routing: AppRoutingModule,
+              private router: Router
+              ) {}
   
   ngOnInit() {
       this._fakeBlogs.getAllBlogs().subscribe(blogs => {
@@ -27,8 +35,10 @@ export class HomePage {
     this.menu.open('first');
   }
 
-  gotoArticle(b){
-     return "#"+ b;
+  gotoArticle(id){
+     console.log(id);
+    // this._data.setId(id);
+     this.router.navigateByUrl('/post/'+id);
   }
   
   changeSearchBar(){
@@ -44,4 +54,5 @@ export class HomePage {
     this.isShowSearchBar = false;
     this.isShowBar = true; 
   }
+  
 }
